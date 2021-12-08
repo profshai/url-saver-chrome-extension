@@ -1,0 +1,32 @@
+
+################################# Template strings
+
+"<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
+
+CAN BE WRITTEN AS:
+<li>
+  <a
+      target='_blank' href='${myLeads[i]}'>
+      ${myLeads[i]}
+  </a>
+</li>`
+
+################################# Converting strings to arrays and back
+
+let myLeads = `["www.awesomelead.com"]`
+
+// Turns the myLeads string into an array
+myLeads = JSON.parse(myLeads)
+
+// Pushes a new value to the array
+myLeads.push("www.example.com")
+
+// Turns the array into a string again
+myLeads = JSON.stringify(myLeads)
+
+console.log(typeof myLeads)
+
+#################################
+list-style: none; to remove unordered list indicator;
+
+#################################
